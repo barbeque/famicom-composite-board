@@ -1,0 +1,332 @@
+EESchema Schematic File Version 4
+LIBS:Famicom composite-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x01_Male J1
+U 1 1 5EDAC6DC
+P 1650 4100
+F 0 "J1" H 1758 4281 50  0000 C CNN
+F 1 "PPU_Pin21" H 1758 4190 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1650 4100 50  0001 C CNN
+F 3 "~" H 1650 4100 50  0001 C CNN
+	1    1650 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 4100 2100 4100
+$Comp
+L power:GND #PWR0101
+U 1 1 5EDACFB6
+P 2400 4800
+F 0 "#PWR0101" H 2400 4550 50  0001 C CNN
+F 1 "GND" H 2405 4627 50  0000 C CNN
+F 2 "" H 2400 4800 50  0001 C CNN
+F 3 "" H 2400 4800 50  0001 C CNN
+	1    2400 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 4300 2400 4800
+$Comp
+L Device:R_Small_US R4
+U 1 1 5EDADE4D
+P 2400 3675
+F 0 "R4" H 2468 3721 50  0000 L CNN
+F 1 "220Ω" H 2468 3630 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 2400 3675 50  0001 C CNN
+F 3 "~" H 2400 3675 50  0001 C CNN
+	1    2400 3675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 3900 2400 3775
+Wire Wire Line
+	2400 3575 2400 3475
+$Comp
+L Device:R_Small_US R3
+U 1 1 5EDAE46D
+P 2400 3275
+F 0 "R3" H 2468 3321 50  0000 L CNN
+F 1 "2200Ω" H 2468 3230 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 2400 3275 50  0001 C CNN
+F 3 "~" H 2400 3275 50  0001 C CNN
+	1    2400 3275
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0102
+U 1 1 5EDAE8B7
+P 2400 3025
+F 0 "#PWR0102" H 2400 2875 50  0001 C CNN
+F 1 "+5V" H 2415 3198 50  0000 C CNN
+F 2 "" H 2400 3025 50  0001 C CNN
+F 3 "" H 2400 3025 50  0001 C CNN
+	1    2400 3025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 3025 2400 3175
+Wire Wire Line
+	2400 3475 3350 3475
+Connection ~ 2400 3475
+Wire Wire Line
+	2400 3475 2400 3375
+$Comp
+L Device:D D1
+U 1 1 5EDAFD8B
+P 3500 3900
+F 0 "D1" H 3500 4116 50  0000 C CNN
+F 1 "1n4148" H 3500 4025 50  0000 C CNN
+F 2 "Diodes_ThroughHole:D_DO-35_SOD27_P10.16mm_Horizontal" H 3500 3900 50  0001 C CNN
+F 3 "~" H 3500 3900 50  0001 C CNN
+	1    3500 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 3900 3350 3475
+$Comp
+L power:+5V #PWR0103
+U 1 1 5EDB0C27
+P 3650 3025
+F 0 "#PWR0103" H 3650 2875 50  0001 C CNN
+F 1 "+5V" H 3665 3198 50  0000 C CNN
+F 2 "" H 3650 3025 50  0001 C CNN
+F 3 "" H 3650 3025 50  0001 C CNN
+	1    3650 3025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3025 3650 3275
+Wire Wire Line
+	3650 3675 3650 3900
+Wire Wire Line
+	3650 3900 3650 4250
+Connection ~ 3650 3900
+$Comp
+L Device:R_Small_US R1
+U 1 1 5EDB1FA7
+P 3650 4350
+F 0 "R1" H 3718 4396 50  0000 L CNN
+F 1 "68Ω" H 3718 4305 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 3650 4350 50  0001 C CNN
+F 3 "~" H 3650 4350 50  0001 C CNN
+	1    3650 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5EDB24C7
+P 3650 4800
+F 0 "#PWR0104" H 3650 4550 50  0001 C CNN
+F 1 "GND" H 3655 4627 50  0000 C CNN
+F 2 "" H 3650 4800 50  0001 C CNN
+F 3 "" H 3650 4800 50  0001 C CNN
+	1    3650 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 4450 3650 4800
+Wire Wire Line
+	3650 3900 3825 3900
+$Comp
+L Device:CP1_Small C1
+U 1 1 5EDB36D8
+P 3925 3900
+F 0 "C1" V 4153 3900 50  0000 C CNN
+F 1 "220µF" V 4062 3900 50  0000 C CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D10.0mm_P5.00mm" H 3925 3900 50  0001 C CNN
+F 3 "~" H 3925 3900 50  0001 C CNN
+	1    3925 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small_US R2
+U 1 1 5EDB3FFC
+P 4375 3900
+F 0 "R2" V 4170 3900 50  0000 C CNN
+F 1 "82Ω" V 4261 3900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 4375 3900 50  0001 C CNN
+F 3 "~" H 4375 3900 50  0001 C CNN
+	1    4375 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4275 3900 4025 3900
+$Comp
+L power:GND #PWR0105
+U 1 1 5EDB6CB1
+P 4975 4775
+F 0 "#PWR0105" H 4975 4525 50  0001 C CNN
+F 1 "GND" H 4980 4602 50  0000 C CNN
+F 2 "" H 4975 4775 50  0001 C CNN
+F 3 "" H 4975 4775 50  0001 C CNN
+	1    4975 4775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4975 4000 4975 4775
+$Comp
+L Connector:Conn_01x01_Male J3
+U 1 1 5EDB77D2
+P 4675 2800
+F 0 "J3" V 4737 2712 50  0000 R CNN
+F 1 "Audio_In" V 4828 2712 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 4675 2800 50  0001 C CNN
+F 3 "~" H 4675 2800 50  0001 C CNN
+	1    4675 2800
+	0    -1   1    0   
+$EndComp
+Text Label 4950 3900 3    50   ~ 0
+Vid_Out
+Wire Wire Line
+	4675 3000 4900 3000
+Wire Wire Line
+	4975 3800 4900 3800
+Connection ~ 4900 3000
+Wire Wire Line
+	4900 3000 4975 3000
+$Comp
+L Device:Q_NJFET_GSD Q1
+U 1 1 5EDC31BB
+P 3550 3475
+F 0 "Q1" H 3741 3521 50  0000 L CNN
+F 1 "Q_NJFET_GSD" H 3741 3430 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 3750 3575 50  0001 C CNN
+F 3 "~" H 3550 3475 50  0001 C CNN
+F 4 "T2N7002AK-LM" H 3550 3475 50  0001 C CNN "DigiKey"
+	1    3550 3475
+	1    0    0    -1  
+$EndComp
+Connection ~ 3350 3475
+$Comp
+L Device:Q_PJFET_GSD Q2
+U 1 1 5EDC720D
+P 2300 4100
+F 0 "Q2" H 2490 4054 50  0000 L CNN
+F 1 "Q_PJFET_GSD" H 2490 4145 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 2500 4200 50  0001 C CNN
+F 3 "~" H 2300 4100 50  0001 C CNN
+	1    2300 4100
+	1    0    0    1   
+$EndComp
+Text Label 2050 4100 3    50   ~ 0
+B
+Text Label 2400 4400 0    50   ~ 0
+D
+Text Label 2400 3850 0    50   ~ 0
+E
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5EDCD4AF
+P 1675 3100
+F 0 "J2" H 1593 2775 50  0000 C CNN
+F 1 "Conn_01x02" H 1593 2866 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 1675 3100 50  0001 C CNN
+F 3 "~" H 1675 3100 50  0001 C CNN
+	1    1675 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5EDCDB9B
+P 1950 3150
+F 0 "#FLG0101" H 1950 3225 50  0001 C CNN
+F 1 "PWR_FLAG" H 1950 3323 50  0000 C CNN
+F 2 "" H 1950 3150 50  0001 C CNN
+F 3 "~" H 1950 3150 50  0001 C CNN
+	1    1950 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5EDCDF50
+P 1950 2950
+F 0 "#FLG0102" H 1950 3025 50  0001 C CNN
+F 1 "PWR_FLAG" H 1950 3123 50  0000 C CNN
+F 2 "" H 1950 2950 50  0001 C CNN
+F 3 "~" H 1950 2950 50  0001 C CNN
+	1    1950 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0106
+U 1 1 5EDCE363
+P 2150 2950
+F 0 "#PWR0106" H 2150 2800 50  0001 C CNN
+F 1 "+5V" H 2165 3123 50  0000 C CNN
+F 2 "" H 2150 2950 50  0001 C CNN
+F 3 "" H 2150 2950 50  0001 C CNN
+	1    2150 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5EDCE70F
+P 2150 3150
+F 0 "#PWR0107" H 2150 2900 50  0001 C CNN
+F 1 "GND" H 2155 2977 50  0000 C CNN
+F 2 "" H 2150 3150 50  0001 C CNN
+F 3 "" H 2150 3150 50  0001 C CNN
+	1    2150 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 3150 1950 3150
+Wire Wire Line
+	1875 3100 1950 3150
+Connection ~ 1950 3150
+Wire Wire Line
+	1875 3000 1950 2950
+Wire Wire Line
+	1950 2950 2150 2950
+Connection ~ 1950 2950
+Wire Wire Line
+	4475 3900 4975 3900
+Wire Wire Line
+	4975 3000 4975 3700
+Wire Wire Line
+	4900 3000 4900 3800
+$Comp
+L Connector:Conn_01x04_Female J4
+U 1 1 5EDB53B3
+P 5175 3800
+F 0 "J4" H 5203 3776 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 5203 3685 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 5175 3800 50  0001 C CNN
+F 3 "~" H 5175 3800 50  0001 C CNN
+	1    5175 3800
+	1    0    0    -1  
+$EndComp
+Text Notes 5225 3700 0    50   ~ 0
+T (Aud. Left)
+Text Notes 5200 3800 0    50   ~ 0
+R1 (Aud. Right)
+Text Notes 5200 3900 0    50   ~ 0
+R2 (C. Video)
+Text Notes 5200 4000 0    50   ~ 0
+S (Ground)
+$Comp
+L Device:C_Small C?
+U 1 1 5EDB9180
+P 1950 3050
+F 0 "C?" H 2042 3096 50  0000 L CNN
+F 1 "0.1µF" H 2042 3005 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1950 3050 50  0001 C CNN
+F 3 "~" H 1950 3050 50  0001 C CNN
+	1    1950 3050
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
