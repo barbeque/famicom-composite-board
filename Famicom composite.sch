@@ -319,10 +319,10 @@ R2 (C. Video)
 Text Notes 5200 4000 0    50   ~ 0
 S (Ground)
 $Comp
-L Device:C_Small C?
+L Device:C_Small C2
 U 1 1 5EDB9180
 P 1950 3050
-F 0 "C?" H 2042 3096 50  0000 L CNN
+F 0 "C2" H 2042 3096 50  0000 L CNN
 F 1 "0.1µF" H 2042 3005 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1950 3050 50  0001 C CNN
 F 3 "~" H 1950 3050 50  0001 C CNN
