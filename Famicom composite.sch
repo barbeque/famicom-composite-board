@@ -41,18 +41,18 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x01_Male J3
 U 1 1 5EDB77D2
-P 6375 550
-F 0 "J3" V 6437 462 50  0000 R CNN
-F 1 "Audio_In" V 6528 462 50  0000 R CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 6375 550 50  0001 C CNN
-F 3 "~" H 6375 550 50  0001 C CNN
-	1    6375 550 
+P 5650 550
+F 0 "J3" V 5712 462 50  0000 R CNN
+F 1 "Audio_In" V 5803 462 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 5650 550 50  0001 C CNN
+F 3 "~" H 5650 550 50  0001 C CNN
+	1    5650 550 
 	0    -1   1    0   
 $EndComp
 Text Label 6650 1650 3    50   ~ 0
 Vid_Out
 Wire Wire Line
-	6375 750  6600 750 
+	5650 750  6275 750 
 Wire Wire Line
 	6675 1550 6600 1550
 Connection ~ 6600 750 
@@ -211,9 +211,7 @@ NoConn ~ 5025 1850
 NoConn ~ 3625 1850
 NoConn ~ 3625 1750
 Wire Wire Line
-	3625 1650 3300 1650
-Wire Wire Line
-	5550 1650 6675 1650
+	5550 1650 5775 1650
 Connection ~ 5550 1650
 $Comp
 L power:GND #PWR0103
@@ -228,4 +226,45 @@ F 3 "" H 5550 2300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5550 2300 5550 1850
+$Comp
+L Device:R_Small_US R2
+U 1 1 5F11AE5C
+P 6200 1650
+F 0 "R2" V 5995 1650 50  0000 C CNN
+F 1 "75Ω" V 6086 1650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 6200 1650 50  0001 C CNN
+F 3 "~" H 6200 1650 50  0001 C CNN
+	1    6200 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 1650 3625 1650
+$Comp
+L Device:CP1_Small C1
+U 1 1 5F11DB6E
+P 6375 750
+F 0 "C1" H 6466 796 50  0000 L CNN
+F 1 "220µF" H 6466 705 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D6.3mm_P2.50mm" H 6375 750 50  0001 C CNN
+F 3 "~" H 6375 750 50  0001 C CNN
+	1    6375 750 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6475 750  6600 750 
+Wire Wire Line
+	5975 1650 6100 1650
+$Comp
+L Device:CP1_Small C3
+U 1 1 5F12F587
+P 5875 1650
+F 0 "C3" V 6103 1650 50  0000 C CNN
+F 1 "330µF" V 6012 1650 50  0000 C CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D6.3mm_P2.50mm" H 5875 1650 50  0001 C CNN
+F 3 "~" H 5875 1650 50  0001 C CNN
+	1    5875 1650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6300 1650 6675 1650
 $EndSCHEMATC
