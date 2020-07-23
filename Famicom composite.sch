@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Famicom composite-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -17,12 +16,12 @@ $EndDescr
 $Comp
 L Connector:Conn_01x01_Male J1
 U 1 1 5EDAC6DC
-P 3100 1650
-F 0 "J1" H 3208 1831 50  0000 C CNN
-F 1 "PPU_Pin21" H 3208 1740 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 3100 1650 50  0001 C CNN
-F 3 "~" H 3100 1650 50  0001 C CNN
-	1    3100 1650
+P 2525 1650
+F 0 "J1" H 2633 1831 50  0000 C CNN
+F 1 "PPU_Pin21" H 2633 1740 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 2525 1650 50  0001 C CNN
+F 3 "~" H 2525 1650 50  0001 C CNN
+	1    2525 1650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -131,8 +130,8 @@ $Comp
 L Connector:Conn_01x04_Female J4
 U 1 1 5EDB53B3
 P 6875 1550
-F 0 "J4" H 6903 1526 50  0000 L CNN
-F 1 "Conn_01x04_Female" H 6903 1435 50  0000 L CNN
+F 0 "J4" H 6850 1775 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 6903 1435 50  0001 L CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 6875 1550 50  0001 C CNN
 F 3 "~" H 6875 1550 50  0001 C CNN
 	1    6875 1550
@@ -208,8 +207,6 @@ Wire Wire Line
 	5550 1650 5025 1650
 NoConn ~ 5025 1750
 NoConn ~ 5025 1850
-NoConn ~ 3625 1850
-NoConn ~ 3625 1750
 Wire Wire Line
 	5550 1650 5775 1650
 Connection ~ 5550 1650
@@ -238,7 +235,7 @@ F 3 "~" H 6200 1650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3300 1650 3625 1650
+	2725 1650 3175 1650
 $Comp
 L Device:CP1_Small C1
 U 1 1 5F11DB6E
@@ -267,4 +264,37 @@ F 3 "~" H 5875 1650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6300 1650 6675 1650
+$Comp
+L power:GND #PWR01
+U 1 1 5F1A0504
+P 3250 2300
+F 0 "#PWR01" H 3250 2050 50  0001 C CNN
+F 1 "GND" H 3255 2127 50  0000 C CNN
+F 2 "" H 3250 2300 50  0001 C CNN
+F 3 "" H 3250 2300 50  0001 C CNN
+	1    3250 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3625 1750 3250 1750
+Wire Wire Line
+	3250 1750 3250 1850
+Wire Wire Line
+	3625 1850 3250 1850
+Connection ~ 3250 1850
+Wire Wire Line
+	3250 1850 3250 2300
+Wire Wire Line
+	3375 1650 3625 1650
+$Comp
+L Device:C_Small C4
+U 1 1 5F1A445E
+P 3275 1650
+F 0 "C4" V 3046 1650 50  0000 C CNN
+F 1 "0.1µF" V 3137 1650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3275 1650 50  0001 C CNN
+F 3 "~" H 3275 1650 50  0001 C CNN
+	1    3275 1650
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
