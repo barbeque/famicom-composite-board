@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Famicom composite-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -285,7 +286,7 @@ Connection ~ 3250 1850
 Wire Wire Line
 	3250 1850 3250 2300
 Wire Wire Line
-	3375 1650 3625 1650
+	3375 1650 3600 1650
 $Comp
 L Device:C_Small C4
 U 1 1 5F1A445E
@@ -297,4 +298,23 @@ F 3 "~" H 3275 1650 50  0001 C CNN
 	1    3275 1650
 	0    1    1    0   
 $EndComp
+$Comp
+L Device:R_Small_US R3
+U 1 1 5F24759C
+P 3600 1350
+F 0 "R3" H 3532 1304 50  0000 R CNN
+F 1 "3MΩ" H 3532 1395 50  0000 R CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 3600 1350 50  0001 C CNN
+F 3 "~" H 3600 1350 50  0001 C CNN
+	1    3600 1350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3600 1250 4000 1250
+Connection ~ 4000 1250
+Wire Wire Line
+	3600 1450 3600 1650
+Connection ~ 3600 1650
+Wire Wire Line
+	3600 1650 3625 1650
 $EndSCHEMATC
