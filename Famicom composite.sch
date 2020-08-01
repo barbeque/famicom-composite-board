@@ -17,12 +17,12 @@ $EndDescr
 $Comp
 L Connector:Conn_01x01_Male J1
 U 1 1 5EDAC6DC
-P 2525 1650
-F 0 "J1" H 2633 1831 50  0000 C CNN
-F 1 "PPU_Pin21" H 2633 1740 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 2525 1650 50  0001 C CNN
-F 3 "~" H 2525 1650 50  0001 C CNN
-	1    2525 1650
+P 1925 1375
+F 0 "J1" H 2033 1556 50  0000 C CNN
+F 1 "PPU_Pin21" H 2033 1465 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1925 1375 50  0001 C CNN
+F 3 "~" H 1925 1375 50  0001 C CNN
+	1    1925 1375
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -36,97 +36,75 @@ F 3 "" H 6675 2300 50  0001 C CNN
 	1    6675 2300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6675 1750 6675 2300
-$Comp
-L Connector:Conn_01x01_Male J3
-U 1 1 5EDB77D2
-P 5650 550
-F 0 "J3" V 5712 462 50  0000 R CNN
-F 1 "Audio_In" V 5803 462 50  0000 R CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 5650 550 50  0001 C CNN
-F 3 "~" H 5650 550 50  0001 C CNN
-	1    5650 550 
-	0    -1   1    0   
-$EndComp
 Text Label 6650 1650 3    50   ~ 0
 Vid_Out
 Wire Wire Line
-	5650 750  6275 750 
-Wire Wire Line
 	6675 1550 6600 1550
-Connection ~ 6600 750 
-Wire Wire Line
-	6600 750  6675 750 
 $Comp
 L Connector_Generic:Conn_01x02 J2
 U 1 1 5EDCD4AF
-P 1800 1200
-F 0 "J2" H 1718 875 50  0000 C CNN
-F 1 "Conn_01x02" H 1718 966 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 1800 1200 50  0001 C CNN
-F 3 "~" H 1800 1200 50  0001 C CNN
-	1    1800 1200
+P 900 1050
+F 0 "J2" H 818 725 50  0000 C CNN
+F 1 "Conn_01x02" H 818 816 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 900 1050 50  0001 C CNN
+F 3 "~" H 900 1050 50  0001 C CNN
+	1    900  1050
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5EDCDB9B
-P 2075 1250
-F 0 "#FLG0101" H 2075 1325 50  0001 C CNN
-F 1 "PWR_FLAG" H 2075 1423 50  0000 C CNN
-F 2 "" H 2075 1250 50  0001 C CNN
-F 3 "~" H 2075 1250 50  0001 C CNN
-	1    2075 1250
+P 1175 1100
+F 0 "#FLG0101" H 1175 1175 50  0001 C CNN
+F 1 "PWR_FLAG" H 1175 1273 50  0000 C CNN
+F 2 "" H 1175 1100 50  0001 C CNN
+F 3 "~" H 1175 1100 50  0001 C CNN
+	1    1175 1100
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 5EDCDF50
-P 2075 1050
-F 0 "#FLG0102" H 2075 1125 50  0001 C CNN
-F 1 "PWR_FLAG" H 2075 1223 50  0000 C CNN
-F 2 "" H 2075 1050 50  0001 C CNN
-F 3 "~" H 2075 1050 50  0001 C CNN
-	1    2075 1050
+P 1175 900
+F 0 "#FLG0102" H 1175 975 50  0001 C CNN
+F 1 "PWR_FLAG" H 1175 1073 50  0000 C CNN
+F 2 "" H 1175 900 50  0001 C CNN
+F 3 "~" H 1175 900 50  0001 C CNN
+	1    1175 900 
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR0106
 U 1 1 5EDCE363
-P 2275 1050
-F 0 "#PWR0106" H 2275 900 50  0001 C CNN
-F 1 "+5V" H 2290 1223 50  0000 C CNN
-F 2 "" H 2275 1050 50  0001 C CNN
-F 3 "" H 2275 1050 50  0001 C CNN
-	1    2275 1050
+P 1375 900
+F 0 "#PWR0106" H 1375 750 50  0001 C CNN
+F 1 "+5V" H 1390 1073 50  0000 C CNN
+F 2 "" H 1375 900 50  0001 C CNN
+F 3 "" H 1375 900 50  0001 C CNN
+	1    1375 900 
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0107
 U 1 1 5EDCE70F
-P 2275 1250
-F 0 "#PWR0107" H 2275 1000 50  0001 C CNN
-F 1 "GND" H 2280 1077 50  0000 C CNN
-F 2 "" H 2275 1250 50  0001 C CNN
-F 3 "" H 2275 1250 50  0001 C CNN
-	1    2275 1250
+P 1375 1100
+F 0 "#PWR0107" H 1375 850 50  0001 C CNN
+F 1 "GND" H 1380 927 50  0000 C CNN
+F 2 "" H 1375 1100 50  0001 C CNN
+F 3 "" H 1375 1100 50  0001 C CNN
+	1    1375 1100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2275 1250 2075 1250
+	1375 1100 1175 1100
 Wire Wire Line
-	2000 1200 2075 1250
-Connection ~ 2075 1250
+	1100 1050 1175 1100
+Connection ~ 1175 1100
 Wire Wire Line
-	2000 1100 2075 1050
+	1100 950  1175 900 
 Wire Wire Line
-	2075 1050 2275 1050
-Connection ~ 2075 1050
-Wire Wire Line
-	6675 750  6675 1450
-Wire Wire Line
-	6600 750  6600 1550
+	1175 900  1375 900 
+Connection ~ 1175 900 
 $Comp
 L Connector:Conn_01x04_Female J4
 U 1 1 5EDB53B3
@@ -149,24 +127,12 @@ S (Ground)
 $Comp
 L Device:C_Small C2
 U 1 1 5EDB9180
-P 2075 1150
-F 0 "C2" H 2167 1196 50  0000 L CNN
-F 1 "0.1µF" H 2167 1105 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2075 1150 50  0001 C CNN
-F 3 "~" H 2075 1150 50  0001 C CNN
-	1    2075 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L THS7314:THS7314 U1
-U 1 1 5EDDB73C
-P 4325 1750
-F 0 "U1" H 4325 2431 50  0000 C CNN
-F 1 "THS7314" H 4325 2340 50  0000 C CNN
-F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 4325 1750 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/ths7314.pdf?ts=1591580762893&ref_url=https://www.ti.com/product/THS7314" H 4325 1750 50  0001 C CNN
-F 4 "" H 4325 1750 50  0001 C CNN "DigiKey"
-	1    4325 1750
+P 1175 1000
+F 0 "C2" H 1267 1046 50  0000 L CNN
+F 1 "0.1µF" H 1267 955 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1175 1000 50  0001 C CNN
+F 3 "~" H 1175 1000 50  0001 C CNN
+	1    1175 1000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -193,37 +159,8 @@ F 3 "" H 4325 2300 50  0001 C CNN
 	1    4325 2300
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_Small_US R1
-U 1 1 5EDDE9B6
-P 5550 1750
-F 0 "R1" H 5482 1704 50  0000 R CNN
-F 1 "1kΩ" H 5482 1795 50  0000 R CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 5550 1750 50  0001 C CNN
-F 3 "~" H 5550 1750 50  0001 C CNN
-	1    5550 1750
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5550 1650 5025 1650
 NoConn ~ 5025 1750
 NoConn ~ 5025 1850
-Wire Wire Line
-	5550 1650 5775 1650
-Connection ~ 5550 1650
-$Comp
-L power:GND #PWR0103
-U 1 1 5EDEB847
-P 5550 2300
-F 0 "#PWR0103" H 5550 2050 50  0001 C CNN
-F 1 "GND" H 5555 2127 50  0000 C CNN
-F 2 "" H 5550 2300 50  0001 C CNN
-F 3 "" H 5550 2300 50  0001 C CNN
-	1    5550 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5550 2300 5550 1850
 $Comp
 L Device:R_Small_US R2
 U 1 1 5F11AE5C
@@ -236,20 +173,7 @@ F 3 "~" H 6200 1650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2725 1650 3175 1650
-$Comp
-L Device:CP1_Small C1
-U 1 1 5F11DB6E
-P 6375 750
-F 0 "C1" H 6466 796 50  0000 L CNN
-F 1 "220µF" H 6466 705 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:CP_Radial_D6.3mm_P2.50mm" H 6375 750 50  0001 C CNN
-F 3 "~" H 6375 750 50  0001 C CNN
-	1    6375 750 
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6475 750  6600 750 
+	2125 1375 2575 1375
 Wire Wire Line
 	5975 1650 6100 1650
 $Comp
@@ -285,36 +209,95 @@ Wire Wire Line
 Connection ~ 3250 1850
 Wire Wire Line
 	3250 1850 3250 2300
-Wire Wire Line
-	3375 1650 3600 1650
 $Comp
-L Device:C_Small C4
-U 1 1 5F1A445E
-P 3275 1650
-F 0 "C4" V 3046 1650 50  0000 C CNN
-F 1 "0.1µF" V 3137 1650 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3275 1650 50  0001 C CNN
-F 3 "~" H 3275 1650 50  0001 C CNN
-	1    3275 1650
-	0    1    1    0   
+L Device:R_Small_US R?
+U 1 1 5F254498
+P 2575 1475
+F 0 "R?" H 2643 1521 50  0000 L CNN
+F 1 "470Ω" H 2643 1430 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 2575 1475 50  0001 C CNN
+F 3 "~" H 2575 1475 50  0001 C CNN
+	1    2575 1475
+	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R3
-U 1 1 5F24759C
-P 3600 1350
-F 0 "R3" H 3532 1304 50  0000 R CNN
-F 1 "3MΩ" H 3532 1395 50  0000 R CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 3600 1350 50  0001 C CNN
-F 3 "~" H 3600 1350 50  0001 C CNN
-	1    3600 1350
-	-1   0    0    1   
+L Device:R_Small_US R?
+U 1 1 5F254CCE
+P 2575 1825
+F 0 "R?" H 2643 1871 50  0000 L CNN
+F 1 "470Ω" H 2643 1780 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 2575 1825 50  0001 C CNN
+F 3 "~" H 2575 1825 50  0001 C CNN
+	1    2575 1825
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F25524F
+P 2575 1925
+F 0 "#PWR?" H 2575 1675 50  0001 C CNN
+F 1 "GND" H 2580 1752 50  0000 C CNN
+F 2 "" H 2575 1925 50  0001 C CNN
+F 3 "" H 2575 1925 50  0001 C CNN
+	1    2575 1925
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3600 1250 4000 1250
-Connection ~ 4000 1250
+	2575 1650 2575 1575
 Wire Wire Line
-	3600 1450 3600 1650
-Connection ~ 3600 1650
+	2575 1650 2575 1725
+Connection ~ 2575 1650
+Text Label 2725 1650 0    50   ~ 0
+Half_Vpp
 Wire Wire Line
-	3600 1650 3625 1650
+	5025 1650 5775 1650
+$Comp
+L THS7314:THS7314 U1
+U 1 1 5EDDB73C
+P 4325 1750
+F 0 "U1" H 4325 2431 50  0000 C CNN
+F 1 "THS7314" H 4325 2340 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 4325 1750 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/ths7314.pdf?ts=1591580762893&ref_url=https://www.ti.com/product/THS7314" H 4325 1750 50  0001 C CNN
+F 4 "" H 4325 1750 50  0001 C CNN "DigiKey"
+	1    4325 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2575 1650 3625 1650
+Wire Wire Line
+	6675 1750 6675 2300
+Wire Wire Line
+	6475 750  6600 750 
+$Comp
+L Device:CP1_Small C1
+U 1 1 5F11DB6E
+P 6375 750
+F 0 "C1" H 6466 796 50  0000 L CNN
+F 1 "220µF" H 6466 705 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D6.3mm_P2.50mm" H 6375 750 50  0001 C CNN
+F 3 "~" H 6375 750 50  0001 C CNN
+	1    6375 750 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6600 750  6600 1550
+Wire Wire Line
+	6675 750  6675 1450
+Wire Wire Line
+	6600 750  6675 750 
+Connection ~ 6600 750 
+Wire Wire Line
+	5650 750  6275 750 
+$Comp
+L Connector:Conn_01x01_Male J3
+U 1 1 5EDB77D2
+P 5650 550
+F 0 "J3" V 5712 462 50  0000 R CNN
+F 1 "Audio_In" V 5803 462 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 5650 550 50  0001 C CNN
+F 3 "~" H 5650 550 50  0001 C CNN
+	1    5650 550 
+	0    -1   1    0   
+$EndComp
 $EndSCHEMATC
