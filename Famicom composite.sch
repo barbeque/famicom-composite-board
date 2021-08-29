@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Famicom composite-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -164,13 +163,13 @@ NoConn ~ 5025 1850
 $Comp
 L Device:R_Small_US R2
 U 1 1 5F11AE5C
-P 6200 1650
-F 0 "R2" V 5995 1650 50  0000 C CNN
-F 1 "75Ω" V 6086 1650 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 6200 1650 50  0001 C CNN
-F 3 "~" H 6200 1650 50  0001 C CNN
-	1    6200 1650
-	0    1    1    0   
+P 6100 1900
+F 0 "R2" V 5895 1900 50  0000 C CNN
+F 1 "75Ω" V 5986 1900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 6100 1900 50  0001 C CNN
+F 3 "~" H 6100 1900 50  0001 C CNN
+	1    6100 1900
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	2125 1375 2575 1375
@@ -187,8 +186,6 @@ F 3 "~" H 5875 1650 50  0001 C CNN
 	1    5875 1650
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	6300 1650 6675 1650
 $Comp
 L power:GND #PWR01
 U 1 1 5F1A0504
@@ -266,7 +263,7 @@ $EndComp
 Wire Wire Line
 	2575 1650 3625 1650
 Wire Wire Line
-	6675 1750 6675 2300
+	6675 1750 6675 2125
 Wire Wire Line
 	6475 750  6600 750 
 $Comp
@@ -300,4 +297,16 @@ F 3 "~" H 5650 550 50  0001 C CNN
 	1    5650 550 
 	0    -1   1    0   
 $EndComp
+Wire Wire Line
+	6100 2000 6100 2125
+Wire Wire Line
+	6100 2125 6675 2125
+Connection ~ 6675 2125
+Wire Wire Line
+	6675 2125 6675 2300
+Wire Wire Line
+	6100 1650 6100 1800
+Wire Wire Line
+	6100 1650 6675 1650
+Connection ~ 6100 1650
 $EndSCHEMATC
