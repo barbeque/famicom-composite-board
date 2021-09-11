@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:Conn_01x01_Male J1
-U 1 1 5EDAC6DC
-P 1925 1375
-F 0 "J1" H 2033 1556 50  0000 C CNN
-F 1 "PPU_Pin21" H 2033 1465 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1925 1375 50  0001 C CNN
-F 3 "~" H 1925 1375 50  0001 C CNN
-	1    1925 1375
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0105
 U 1 1 5EDB6CB1
 P 6675 2300
@@ -37,88 +26,50 @@ F 3 "" H 6675 2300 50  0001 C CNN
 $EndComp
 Text Label 6650 1650 3    50   ~ 0
 Vid_Out
-Wire Wire Line
-	6675 1550 6600 1550
-$Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 5EDCD4AF
-P 900 1050
-F 0 "J2" H 818 725 50  0000 C CNN
-F 1 "Conn_01x02" H 818 816 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 900 1050 50  0001 C CNN
-F 3 "~" H 900 1050 50  0001 C CNN
-	1    900  1050
-	-1   0    0    1   
-$EndComp
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5EDCDB9B
-P 1175 1100
-F 0 "#FLG0101" H 1175 1175 50  0001 C CNN
-F 1 "PWR_FLAG" H 1175 1273 50  0000 C CNN
-F 2 "" H 1175 1100 50  0001 C CNN
-F 3 "~" H 1175 1100 50  0001 C CNN
-	1    1175 1100
-	-1   0    0    1   
+P 2000 2275
+F 0 "#FLG0101" H 2000 2350 50  0001 C CNN
+F 1 "PWR_FLAG" H 2000 2448 50  0001 C CNN
+F 2 "" H 2000 2275 50  0001 C CNN
+F 3 "~" H 2000 2275 50  0001 C CNN
+	1    2000 2275
+	0    1    1    0   
 $EndComp
 $Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 5EDCDF50
-P 1175 900
-F 0 "#FLG0102" H 1175 975 50  0001 C CNN
-F 1 "PWR_FLAG" H 1175 1073 50  0000 C CNN
-F 2 "" H 1175 900 50  0001 C CNN
-F 3 "~" H 1175 900 50  0001 C CNN
-	1    1175 900 
-	1    0    0    -1  
+P 2000 1875
+F 0 "#FLG0102" H 2000 1950 50  0001 C CNN
+F 1 "PWR_FLAG" H 2000 2048 50  0001 C CNN
+F 2 "" H 2000 1875 50  0001 C CNN
+F 3 "~" H 2000 1875 50  0001 C CNN
+	1    2000 1875
+	0    1    1    0   
 $EndComp
 $Comp
 L power:+5V #PWR0106
 U 1 1 5EDCE363
-P 1375 900
-F 0 "#PWR0106" H 1375 750 50  0001 C CNN
-F 1 "+5V" H 1390 1073 50  0000 C CNN
-F 2 "" H 1375 900 50  0001 C CNN
-F 3 "" H 1375 900 50  0001 C CNN
-	1    1375 900 
+P 2000 1775
+F 0 "#PWR0106" H 2000 1625 50  0001 C CNN
+F 1 "+5V" H 2015 1948 50  0000 C CNN
+F 2 "" H 2000 1775 50  0001 C CNN
+F 3 "" H 2000 1775 50  0001 C CNN
+	1    2000 1775
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0107
 U 1 1 5EDCE70F
-P 1375 1100
-F 0 "#PWR0107" H 1375 850 50  0001 C CNN
-F 1 "GND" H 1380 927 50  0000 C CNN
-F 2 "" H 1375 1100 50  0001 C CNN
-F 3 "" H 1375 1100 50  0001 C CNN
-	1    1375 1100
+P 2000 2375
+F 0 "#PWR0107" H 2000 2125 50  0001 C CNN
+F 1 "GND" H 2005 2202 50  0000 C CNN
+F 2 "" H 2000 2375 50  0001 C CNN
+F 3 "" H 2000 2375 50  0001 C CNN
+	1    2000 2375
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1375 1100 1175 1100
-Wire Wire Line
-	1100 1050 1175 1100
-Connection ~ 1175 1100
-Wire Wire Line
-	1100 950  1175 900 
-Wire Wire Line
-	1175 900  1375 900 
-Connection ~ 1175 900 
-$Comp
-L Connector:Conn_01x04_Female J4
-U 1 1 5EDB53B3
-P 6875 1550
-F 0 "J4" H 6850 1775 50  0000 L CNN
-F 1 "Conn_01x04_Female" H 6903 1435 50  0001 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 6875 1550 50  0001 C CNN
-F 3 "~" H 6875 1550 50  0001 C CNN
-	1    6875 1550
-	1    0    0    -1  
-$EndComp
-Text Notes 6925 1450 0    50   ~ 0
-T (Aud. Left)
-Text Notes 6900 1550 0    50   ~ 0
-R1 (Aud. Right)
 Text Notes 6900 1650 0    50   ~ 0
 R2 (C. Video)
 Text Notes 6900 1750 0    50   ~ 0
@@ -126,12 +77,12 @@ S (Ground)
 $Comp
 L Device:C_Small C2
 U 1 1 5EDB9180
-P 1175 1000
-F 0 "C2" H 1267 1046 50  0000 L CNN
-F 1 "0.1µF" H 1267 955 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1175 1000 50  0001 C CNN
-F 3 "~" H 1175 1000 50  0001 C CNN
-	1    1175 1000
+P 2000 2075
+F 0 "C2" H 2092 2121 50  0000 L CNN
+F 1 "0.1µF" H 2092 2030 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2000 2075 50  0001 C CNN
+F 3 "~" H 2000 2075 50  0001 C CNN
+	1    2000 2075
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -163,25 +114,21 @@ NoConn ~ 5025 1850
 $Comp
 L Device:R_Small_US R2
 U 1 1 5F11AE5C
-P 6100 1900
-F 0 "R2" V 5895 1900 50  0000 C CNN
-F 1 "75Ω" V 5986 1900 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 6100 1900 50  0001 C CNN
-F 3 "~" H 6100 1900 50  0001 C CNN
-	1    6100 1900
-	-1   0    0    1   
+P 6275 1650
+F 0 "R2" V 6070 1650 50  0000 C CNN
+F 1 "75Ω" V 6161 1650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6275 1650 50  0001 C CNN
+F 3 "~" H 6275 1650 50  0001 C CNN
+	1    6275 1650
+	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	2125 1375 2575 1375
-Wire Wire Line
-	5975 1650 6100 1650
 $Comp
 L Device:CP1_Small C3
 U 1 1 5F12F587
 P 5875 1650
 F 0 "C3" V 6103 1650 50  0000 C CNN
 F 1 "330µF" V 6012 1650 50  0000 C CNN
-F 2 "Capacitors_ThroughHole:CP_Radial_D6.3mm_P2.50mm" H 5875 1650 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 5875 1650 50  0001 C CNN
 F 3 "~" H 5875 1650 50  0001 C CNN
 	1    5875 1650
 	0    -1   -1   0   
@@ -207,23 +154,12 @@ Connection ~ 3250 1850
 Wire Wire Line
 	3250 1850 3250 2300
 $Comp
-L Device:R_Small_US R1
-U 1 1 5F254498
-P 2575 1475
-F 0 "R1" H 2643 1521 50  0000 L CNN
-F 1 "470Ω" H 2643 1430 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 2575 1475 50  0001 C CNN
-F 3 "~" H 2575 1475 50  0001 C CNN
-	1    2575 1475
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Small_US R3
 U 1 1 5F254CCE
 P 2575 1825
 F 0 "R3" H 2643 1871 50  0000 L CNN
 F 1 "470Ω" H 2643 1780 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 2575 1825 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2575 1825 50  0001 C CNN
 F 3 "~" H 2575 1825 50  0001 C CNN
 	1    2575 1825
 	1    0    0    -1  
@@ -245,7 +181,7 @@ Wire Wire Line
 	2575 1650 2575 1725
 Connection ~ 2575 1650
 Text Label 2725 1650 0    50   ~ 0
-Half_Vpp
+Chopped_Vpp
 Wire Wire Line
 	5025 1650 5775 1650
 $Comp
@@ -254,7 +190,7 @@ U 1 1 5EDDB73C
 P 4325 1750
 F 0 "U1" H 4325 2431 50  0000 C CNN
 F 1 "THS7314" H 4325 2340 50  0000 C CNN
-F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 4325 1750 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4325 1750 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/ths7314.pdf?ts=1591580762893&ref_url=https://www.ti.com/product/THS7314" H 4325 1750 50  0001 C CNN
 F 4 "" H 4325 1750 50  0001 C CNN "DigiKey"
 	1    4325 1750
@@ -262,51 +198,71 @@ F 4 "" H 4325 1750 50  0001 C CNN "DigiKey"
 $EndComp
 Wire Wire Line
 	2575 1650 3625 1650
-Wire Wire Line
-	6675 1750 6675 2125
-Wire Wire Line
-	6475 750  6600 750 
 $Comp
-L Device:CP1_Small C1
-U 1 1 5F11DB6E
-P 6375 750
-F 0 "C1" H 6466 796 50  0000 L CNN
-F 1 "220µF" H 6466 705 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:CP_Radial_D6.3mm_P2.50mm" H 6375 750 50  0001 C CNN
-F 3 "~" H 6375 750 50  0001 C CNN
-	1    6375 750 
-	0    -1   -1   0   
+L Device:R_Small_US R1
+U 1 1 5F254498
+P 2575 1475
+F 0 "R1" H 2643 1521 50  0000 L CNN
+F 1 "1500Ω" H 2643 1430 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2575 1475 50  0001 C CNN
+F 3 "~" H 2575 1475 50  0001 C CNN
+	1    2575 1475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J3
+U 1 1 613C1C20
+P 6875 1650
+F 0 "J3" H 6825 1850 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 6903 1535 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6875 1650 50  0001 C CNN
+F 3 "~" H 6875 1650 50  0001 C CNN
+	1    6875 1650
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6600 750  6600 1550
+	6375 1650 6675 1650
 Wire Wire Line
-	6675 750  6675 1450
+	5975 1650 6175 1650
 Wire Wire Line
-	6600 750  6675 750 
-Connection ~ 6600 750 
-Wire Wire Line
-	5650 750  6275 750 
+	6675 1750 6675 2300
 $Comp
-L Connector:Conn_01x01_Male J3
-U 1 1 5EDB77D2
-P 5650 550
-F 0 "J3" V 5712 462 50  0000 R CNN
-F 1 "Audio_In" V 5803 462 50  0000 R CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 5650 550 50  0001 C CNN
-F 3 "~" H 5650 550 50  0001 C CNN
-	1    5650 550 
-	0    -1   1    0   
+L Connector:Conn_01x03_Female J1
+U 1 1 613C4F7D
+P 1000 1975
+F 0 "J1" H 892 1650 50  0000 C CNN
+F 1 "Conn_01x03_Female" H 892 1741 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1000 1975 50  0001 C CNN
+F 3 "~" H 1000 1975 50  0001 C CNN
+	1    1000 1975
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6100 2000 6100 2125
+	1200 1875 1725 1875
 Wire Wire Line
-	6100 2125 6675 2125
-Connection ~ 6675 2125
+	1725 1875 1725 1375
 Wire Wire Line
-	6675 2125 6675 2300
+	1725 1375 2575 1375
+Text Label 1725 1375 0    50   ~ 0
+Pre_RF
 Wire Wire Line
-	6100 1650 6100 1800
+	2000 2175 1450 2175
 Wire Wire Line
-	6100 1650 6675 1650
-Connection ~ 6100 1650
+	1450 2175 1450 2075
+Wire Wire Line
+	1450 2075 1200 2075
+Wire Wire Line
+	1200 1975 2000 1975
+Wire Wire Line
+	2000 1775 2000 1875
+Connection ~ 2000 1975
+Connection ~ 2000 1875
+Wire Wire Line
+	2000 1875 2000 1975
+Wire Wire Line
+	2000 2175 2000 2275
+Connection ~ 2000 2175
+Connection ~ 2000 2275
+Wire Wire Line
+	2000 2275 2000 2375
 $EndSCHEMATC
